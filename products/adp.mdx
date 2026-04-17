@@ -1,0 +1,131 @@
+---
+title: "腾讯云 ADP"
+description: "Tencent Cloud Agent Development Platform，企业级智能体构建平台"
+sidebarTitle: "ADP"
+tag: "GA"
+---
+
+{/* TODO: 最后核对日期 — 2026-04-17 抓取 */}
+
+## 它解决什么问题
+
+企业想做一个"智能客服"或"内部知识问答"机器人，但绕不开几件烦心事：
+
+- 公司知识散落在十几个文档系统，怎么让 AI 能查
+- 怎么保证它不胡说（幻觉）
+- 多租户、权限审计、数据隔离怎么做
+- 想接 DeepSeek、混元、自家自训模型，怎么统一管理
+- 上线后怎么持续评测和迭代
+
+ADP 就是把这些事打包做了，让企业**不必从 0 搭一套 Agent 基建**。
+
+## 一句话定义
+
+腾讯云的**企业级智能体构建平台**，提供 LLM+RAG / Workflow / Multi-agent 三种开发框架，零/低代码可视化配置。原名"大模型知识引擎 LKE"，2025 年改名 ADP。
+
+## 核心能力
+
+- **三种开发框架** —— LLM+RAG（知识问答）、Workflow（流程化任务）、Multi-agent（复杂协作）
+- **企业级 RAG** —— 高召回 + 高精准的检索，跨文档综合检索
+- **零/低代码配置** —— 业务人员也能搭
+- **多模型管理** —— 主流大模型 + 自建模型一站接入
+- **MCP + 插件生态** —— 接外部工具
+- **企业级评测** —— 内置评测和多版本对比
+- **企业级安全** —— 多租户隔离、内容风控、细粒度权限审计
+- **全链路监控** —— 数据洞察、监控告警
+
+## 典型使用场景
+
+官方分了 4 大类：
+
+**1. 智能客服**
+- 售前售后服务、连锁酒店数字管家、民生政务服务
+
+**2. 营销与销售赋能**
+- 销售助手、产品智问、客户分层推荐
+
+**3. 数据分析与生产提效**
+- 内部行政助手、业务知识专家、智能质检
+
+**4. 内容生成与知识管理**
+- 文档自动归档、报告生成、知识库问答
+
+**真实客户案例**（这个产品客户最多）
+- **史密斯**：售后机器人独立解决率 80%
+- **洋河股份**：客服综合解决率 80%+
+- **同程旅行**：智能旅行助手 DeepTrip
+- **一汽丰田**：智能客服独立解决率 37% → 84%
+- **DHL**：toC 物流咨询机器人
+- **腾讯学堂**：内部 AI 问答助手
+
+## 不适合用的场景
+
+- **小团队 / 个人用** —— 这是企业级平台，最低也是按企业付费，对个人重
+- **想自己控全栈** —— 框架是封装好的，深度定制空间有限
+- **极致前沿模型实验** —— 模型选择丰富但不会比直接调 API 快
+- **纯生成式内容（写稿、画图）** —— 用 TokenHub 直调更直接
+
+## 跟谁比
+
+**腾讯内部相似产品**（容易混！）
+- **TokenHub** —— 大模型服务平台，**只调模型**，没有 Agent 编排。如果只想调用混元 / DeepSeek API，用 TokenHub
+- **TI-ONE** —— 训练平台，给算法工程师**自己训模型**用
+- **Agent Runtime** —— Agent 运行时，**已建好的 Agent 跑起来**的地方
+- **CodeBuddy** —— 编程方向 Agent
+
+简单记忆：**ADP 是搭 Agent 的，TokenHub 是调模型的，TI-ONE 是训模型的，Agent Runtime 是跑 Agent 的**
+
+**外部对标**
+- **阿里云百炼** —— 同类企业 Agent 平台
+- **字节扣子（Coze）** —— 偏 toC + toB 通用，ADP 偏企业级
+- **百度千帆 AppBuilder** —— 同类
+- **Dify** —— 开源版 ADP，自己部署
+
+## 核心概念词典
+
+- **RAG**（Retrieval-Augmented Generation）—— 让 LLM 在回答前先去知识库"查资料"，减少幻觉
+- **Agentic RAG** —— 智能体化的 RAG，AI 自己决定查什么、查几次、怎么综合
+- **Workflow** —— 把 Agent 任务串成流程图（节点 + 连线）
+- **Multi-agent** —— 多个 Agent 协作完成一个任务
+- **LKE** —— Large Knowledge Engine，ADP 的旧名"大模型知识引擎"，URL 还是 `lke.cloud.tencent.com`
+- **Widget** —— 兼容 OpenAI 生态的接入方式
+
+## 定价感觉
+
+- **体验版**：0 元免费试用
+- **正式版**：按模型类型 / 调用量 / 并发收费
+- 计费维度：模型 token + 知识库存储 + 调用次数
+
+{/* TODO: 核实正式版起步价量级（月几千还是几万） */}
+
+## 怎么开始用
+
+<Steps>
+  <Step title="领体验版">
+    去 [lke.cloud.tencent.com](https://lke.cloud.tencent.com/lke/#/trialProduct) 0 元开通
+  </Step>
+  <Step title="跑一个模板">
+    平台内置了智能客服、知识问答等行业模板，先跑通一个
+  </Step>
+  <Step title="接自己的知识">
+    上传文档建知识库，看 RAG 召回效果
+  </Step>
+  <Step title="接 IM / 网页">
+    通过 Widget 或 API 接到企业微信、网页等渠道
+  </Step>
+</Steps>
+
+## 我的笔记
+
+{/* TODO: 实际用过之后补充 — RAG 召回质量、Workflow 编辑器易用性、跟 Dify 对比、企业版接入坑 */}
+
+还没实际用过，等用了再补。
+
+## 官方资源
+
+- [产品主页](https://cloud.tencent.com/product/adp)
+- [控制台 / 体验入口](https://lke.cloud.tencent.com/)
+- [产品文档](https://cloud.tencent.com/document/product/1759)
+- [快速入门](https://cloud.tencent.com/document/product/1759/104201)
+- [购买指南](https://cloud.tencent.com/document/product/1759/104197)
+- [原子能力 API](https://cloud.tencent.com/document/product/1772)

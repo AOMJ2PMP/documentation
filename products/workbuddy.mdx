@@ -1,0 +1,103 @@
+---
+title: "WorkBuddy"
+description: "腾讯出的 AI 桌面智能体工作台，在 IM 里下指令让 AI 自动干活"
+sidebarTitle: "WorkBuddy"
+tag: "Beta"
+---
+
+{/* TODO: 最后核对日期 — 2026-04-17 抓取。WorkBuddy 1 月才内部开放，节奏快，状态可能很快变 */}
+
+## 它解决什么问题
+
+办公场景里有大量"懂了但没耐心做"的活儿：把杂乱发票整理成报销表、把 Excel 数据清洗汇总、根据模板搜资料生成 PPT、读完一堆用户反馈写洞察报告。这些事不难，但耗精力，又不值得专门开发工具。WorkBuddy 想成为电脑里那个**真的能动手把活干完**的 AI 同事，而不是另一个聊天框。
+
+## 一句话定义
+
+腾讯（CodeBuddy 团队）出的 **AI 原生桌面智能体工作台**，可以从微信 / 企业微信 / QQ / 飞书 / 钉钉等 IM 里下指令，AI 在你电脑上自动干活并交付结果。
+
+## 核心能力
+
+- **桌面端 Agent** —— 装在你电脑上，能操作本地文件
+- **IM 接管** —— 指令通过日常用的 IM 下达，不必切换工具
+- **多 Agent 并行** —— 一个任务可以拆给多个 Agent 同时做
+- **预集成模型** —— 不用自己配置 API key
+- **MCP / Skills 扩展** —— 兼容 MCP，也兼容自家"龙虾 Skills"生态
+- **腾讯网关** —— 数据走腾讯安全通道
+
+## 典型使用场景
+
+官方分了三大类：
+
+**1. 本地信息批量处理**
+- Excel 批量清洗 + 跨表合并 + 生成图表
+- 多格式发票批量提取信息生成报销表
+- 杂乱下载文件夹自动归档
+
+**2. 外部信息调研与内容生成**
+- 给个主题，自动搜资料 + 生成调研报告
+- 按模板搜素材自动生成 PPT
+
+**3. 业务数据洞察**
+- 用户反馈 / 评论文档情感分类 + 提炼问题 + 生成周期性报告
+- CRM 销售数据分析丢单原因 + 输出跟进建议
+
+## 不适合用的场景
+
+- **强保密文件** —— Agent 要读你的本地文件，敏感数据要谨慎
+- **需要严格审计的工作流** —— 自动化做事意味着错误也是"自动化的"
+- **结果需要 100% 准确的场景** —— 报销表、调研报告生成后还得你校验
+- **Mac 老机型 / 老 Windows** —— 需要 macOS 11.0+ 或 Win 10/11
+
+## 跟谁比
+
+**腾讯内部**
+- **CodeBuddy** —— 兄弟产品。CodeBuddy 管编程，WorkBuddy 管办公
+- **微信 / 企业微信里的 AI 助手** —— WorkBuddy 通过 IM 下指令，但本体是桌面 Agent，能力强得多
+
+**外部**
+- **Manus** —— 也是 AI Agent 路线，Manus 是云端，WorkBuddy 是桌面
+- **Claude for Desktop / ChatGPT Desktop** —— 主要是聊天 + MCP 工具调用，没有"自动干完整任务"那种 Agent 形态
+- **字节扣子 Coze** —— Coze 偏低代码搭 Agent 给别人用，WorkBuddy 是给"自己用"的桌面工具
+
+## 核心概念词典
+
+- **桌面智能体（Desktop Agent）** —— 装在本地、能操作本地资源的 AI 助手，区别于"云端 Agent"
+- **MCP** —— Model Context Protocol，让 AI 调用外部工具的标准
+- **龙虾 Skills / Claw** —— WorkBuddy 自家的能力扩展生态（"龙虾"是它的吉祥物）
+- **多 Agent 并行** —— 一个任务被拆成几个子任务，多个 AI 实例同时跑
+
+## 定价感觉
+
+{/* TODO: 当前看到的官方页面没明示定价，疑似还在免费推广期。需要核实 */}
+
+目前看是免费下载试用，安装即用。商业化策略待观察。
+
+## 怎么开始用
+
+<Steps>
+  <Step title="下载客户端">
+    去 [workbuddy.tencent.com](https://workbuddy.tencent.com/) 下载 macOS 或 Windows 版
+  </Step>
+  <Step title="装好后绑定 IM">
+    支持微信、企业微信、QQ、飞书、钉钉。看官方对应的接入指南
+  </Step>
+  <Step title="试一个简单任务">
+    比如让它把下载文件夹按类型整理，看效果
+  </Step>
+</Steps>
+
+## 我的笔记
+
+{/* TODO: 实际用过之后补充 — 实际任务完成度、错误率、Agent 操作本地文件时的安全感、跟 Manus 体感对比 */}
+
+还没实际用过，等用了再补。
+
+第三方反馈参考：[知乎 - 腾讯出手 WorkBuddy](https://zhuanlan.zhihu.com/p/2004182893702948639)（2026 年 1 月，腾讯内部已 2000+ 员工试用）
+
+## 官方资源
+
+- [产品主页](https://workbuddy.tencent.com/)
+- [Claw 接入指南](https://www.codebuddy.cn/docs/workbuddy/Claw)
+- [微信接入](https://www.codebuddy.cn/docs/workbuddy/WeixinBot-Guide)
+- [企业微信接入](https://www.codebuddy.cn/docs/workbuddy/Wecom-Guide)
+- [飞书接入](https://www.codebuddy.cn/docs/workbuddy/Feishu-Guide)

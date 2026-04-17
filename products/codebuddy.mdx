@@ -1,0 +1,102 @@
+---
+title: "CodeBuddy"
+description: "腾讯云的 AI 编程助手，基于混元代码大模型，覆盖代码补全、对话、单测、评审等场景"
+sidebarTitle: "CodeBuddy"
+tag: "GA"
+---
+
+{/* TODO: 最后核对日期 — 2026-04-17 抓取 */}
+
+## 它解决什么问题
+
+写代码这件事里，有一大部分时间花在重复劳动上：补全已经写过的样板代码、给老代码写注释、写单测、读懂前任留下的"祖传代码"、查 Stack Overflow。CodeBuddy 想把这些机械性的事情接管掉，让你能把注意力放回业务逻辑本身。
+
+## 一句话定义
+
+腾讯云出的 IDE 插件，基于自家**混元代码大模型**，提供代码补全、技术对话、代码诊断、单元测试生成等能力，对标 GitHub Copilot。
+
+## 核心能力
+
+- **Craft 开发智能体** —— 不只是补全，能做端到端的开发任务（类似 Cursor 的 Composer）
+- **AI 对话** —— 在 IDE 里直接聊技术问题，理解当前文件 / 工程上下文
+- **代码补全** —— 行内补全、根据注释生成、上下文感知
+- **单元测试生成** —— 选中函数一键生成测试
+- **智能评审** —— 给出代码 review 建议
+- **知识库** —— 接入企业内部知识，让 AI 懂"我们这套系统"
+- **MCP Server** —— 兼容 MCP 协议，可以扩展自定义工具
+
+## 典型使用场景
+
+- 写新功能时让它帮你补样板代码（CRUD、API 调用、错误处理）
+- 接手一个不熟的项目，用对话功能让它解释架构
+- 改老代码前先让它分析依赖关系
+- 写完函数让它生成单测
+- 不熟的语言（比如临时要写点 Go / Rust）当作"懂语法的搜索引擎"
+
+## 不适合用的场景
+
+- **强保密 / 离网环境** —— 个人版和旗舰版数据走腾讯云共享 VPC，敏感代码场景需要专享版（独立 VPC）
+- **依赖最新框架** —— LLM 训练数据有滞后，最新发布的库可能补全质量差
+- **需要架构级决策** —— 它擅长"怎么写"，不擅长"该不该这么写"
+- **学习编程的新人** —— 容易养成不思考直接 Tab 的习惯
+
+## 跟谁比
+
+**腾讯云内部**
+- **Cloud Studio** —— 云端 IDE，跟 CodeBuddy 配合用（CodeBuddy 是插件，Cloud Studio 是宿主）
+- **CODING DevOps** —— 偏 DevOps 全流程，CodeBuddy 是其中编码环节的 AI 增强
+
+**外部**
+- **GitHub Copilot** —— 最直接对标。CodeBuddy 优势：免费个人版、对中文场景更友好、企业部署方案更灵活
+- **Cursor** —— Cursor 是独立 IDE，CodeBuddy 是 VS Code / JetBrains 插件
+- **通义灵码（阿里）** —— 同类产品
+
+{/* TODO: 加入实际对比体验后的优劣判断 */}
+
+## 核心概念词典
+
+- **Craft** —— CodeBuddy 的"开发智能体"，类似 Cursor Composer，可以跨文件做大改动
+- **MCP Server** —— Model Context Protocol 服务端，让 LLM 调用外部工具（如查数据库、调 API）
+- **专享 VPC** —— 独立的网络环境，企业代码不与其他客户共享通道
+- **混元代码大模型** —— 腾讯自研的代码专项 LLM
+
+## 定价感觉
+
+- **个人版**：限时免费
+- **旗舰版**：按企业团队座席数收费
+- **专享版**：独立 VPC + 专属企业插件，价格更高
+
+{/* TODO: 核实当前是否还在限时免费期 */}
+
+## 怎么开始用
+
+最快路径：
+
+<Steps>
+  <Step title="装插件">
+    打开 VS Code 或 JetBrains，搜索 "Tencent CodeBuddy" 安装
+  </Step>
+  <Step title="登录">
+    用微信扫码登录腾讯云账号即可
+  </Step>
+  <Step title="试一下">
+    在代码里写一行注释（如 `// 计算斐波那契数列`），换行看是否补全
+  </Step>
+</Steps>
+
+完整指引：[腾讯云代码助手快速入门](https://cloud.tencent.com/document/product/1749/104569)
+
+## 我的笔记
+
+{/* TODO: 实际用过之后补充 — 补全质量、Craft 实际效果、混元模型 vs Claude/GPT 的体感差异、企业版接入流程 */}
+
+还没实际用过，等用了再补。
+
+## 官方资源
+
+- [产品主页](https://cloud.tencent.com/product/acc)
+- [产品文档](https://cloud.tencent.com/document/product/1749)
+- [VS Code 插件](https://marketplace.visualstudio.com/items?itemName=Tencent-Cloud.coding-copilot)
+- [JetBrains 插件](https://plugins.jetbrains.com/plugin/24379)
+- [在线体验（Cloud Studio）](https://ide.cloud.tencent.com/)
+- [常见问题](https://cloud.tencent.com/document/product/1749/104248)
