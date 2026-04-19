@@ -17,8 +17,28 @@
         ]
       },
       {
-        "tab": "产品图鉴",
+        "tab": "Blog",
         "groups": [
+          {
+            "group": "Thoughts",
+            "icon": "crystal-ball",
+            "pages": [
+              "notes/overview"
+            ]
+          },
+          {
+            "group": "Books",
+            "icon": "book-open",
+            "pages": [
+              "file"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CSIG Products for Newbie",
+        "pages": [
+          "about-1",
           {
             "group": "开始",
             "pages": [
@@ -36,13 +56,24 @@
         ]
       },
       {
-        "tab": "笔记",
+        "tab": "AR work",
         "groups": [
           {
-            "group": "开始",
+            "group": "Reports",
             "pages": [
-              "notes/overview"
+              "file-1",
+              "mongo-db",
+              "forrester-dlc-wave",
+              "forrester"
             ]
+          },
+          {
+            "group": "Answer it",
+            "pages": []
+          },
+          {
+            "group": "Ask it",
+            "pages": []
           }
         ]
       }
