@@ -36,26 +36,6 @@
         ]
       },
       {
-        "tab": "CSIG Products for Newbie",
-        "pages": [
-          "about-1",
-          {
-            "group": "开始",
-            "pages": [
-              "products/overview"
-            ]
-          },
-          {
-            "group": "AI 产品",
-            "pages": [
-              "products/codebuddy",
-              "products/workbuddy",
-              "products/adp"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "AR work",
         "groups": [
           {
@@ -74,6 +54,26 @@
           {
             "group": "Ask it",
             "pages": []
+          }
+        ]
+      },
+      {
+        "tab": "CSIG Products for Newbie",
+        "pages": [
+          "about-1",
+          {
+            "group": "开始",
+            "pages": [
+              "products/overview"
+            ]
+          },
+          {
+            "group": "AI 产品",
+            "pages": [
+              "products/codebuddy",
+              "products/workbuddy",
+              "products/adp"
+            ]
           }
         ]
       }
