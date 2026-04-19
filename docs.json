@@ -37,7 +37,8 @@
       },
       {
         "tab": "AR work",
-        "groups": [
+        "pages": [
+          "changelog",
           {
             "group": "Reports",
             "pages": [
@@ -54,6 +55,13 @@
           {
             "group": "Ask it",
             "pages": []
+          },
+          {
+            "group": "wink wink",
+            "pages": [
+              "prompt",
+              "ar-sop"
+            ]
           }
         ]
       },
