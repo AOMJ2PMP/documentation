@@ -85,6 +85,12 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Whimsy",
+        "pages": [
+          "untitled-page"
+        ]
       }
     ]
   },
