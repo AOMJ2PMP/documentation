@@ -18,7 +18,8 @@
       },
       {
         "tab": "Blog",
-        "groups": [
+        "pages": [
+          "toc-blog",
           {
             "group": "Thoughts",
             "icon": "crystal-ball",
@@ -89,7 +90,7 @@
       {
         "tab": "Whimsy",
         "pages": [
-          "untitled-page"
+          "vocab-for-web-dev"
         ]
       }
     ]
