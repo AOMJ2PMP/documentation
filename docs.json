@@ -23,7 +23,8 @@
             "group": "Thoughts",
             "icon": "crystal-ball",
             "pages": [
-              "notes/be-professional"
+              "notes/be-professional",
+              "notes/claude-lessons"
             ]
           },
           {
