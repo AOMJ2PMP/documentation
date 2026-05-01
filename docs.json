@@ -17,6 +17,23 @@
         ]
       },
       {
+        "tab": "Hyrox",
+        "dropdowns": [
+          {
+            "dropdown": "Mindsets"
+          },
+          {
+            "dropdown": "Training"
+          },
+          {
+            "dropdown": "Nutrition"
+          },
+          {
+            "dropdown": "Sleep"
+          }
+        ]
+      },
+      {
         "tab": "Blog",
         "pages": [
           "toc-blog",
@@ -25,7 +42,8 @@
             "icon": "crystal-ball",
             "pages": [
               "notes/be-professional",
-              "notes/claude-lessons"
+              "notes/claude-got-banned",
+              "notes/what-is-ai-native"
             ]
           },
           {
@@ -33,6 +51,21 @@
             "icon": "book-open",
             "pages": [
               "file"
+            ]
+          },
+          {
+            "group": "Companies",
+            "icon": "chart-network",
+            "pages": [
+              "mintlify",
+              "anthropic"
+            ]
+          },
+          {
+            "group": "Notes",
+            "icon": "leaf",
+            "pages": [
+              "money-allocation"
             ]
           }
         ]
@@ -44,10 +77,12 @@
           {
             "group": "Reports",
             "pages": [
-              "file-1",
-              "mongo-db",
+              "forrester-1",
               "forrester-dlc-wave",
-              "forrester"
+              "omdia",
+              "forrester",
+              "file-1",
+              "mongo-db"
             ]
           },
           {
@@ -90,7 +125,9 @@
       {
         "tab": "Whimsy",
         "pages": [
-          "vocab-for-web-dev"
+          "vocab-for-web-dev",
+          "a-better-way-of-billing",
+          "what-is-pan-developer-marketing"
         ]
       }
     ]
