@@ -25,18 +25,18 @@
       },
       {
         "tab": "Hyrox",
-        "dropdowns": [
+        "groups": [
           {
-            "dropdown": "Mindsets"
+            "group": "Training",
+            "pages": []
           },
           {
-            "dropdown": "Training"
+            "group": "Nutrition",
+            "pages": []
           },
           {
-            "dropdown": "Nutrition"
-          },
-          {
-            "dropdown": "Sleep"
+            "group": "Sleep",
+            "pages": []
           }
         ]
       },
