@@ -25,19 +25,30 @@
       },
       {
         "tab": "Hyrox",
-        "groups": [
+        "pages": [
           {
             "group": "Training",
-            "pages": []
+            "pages": [
+              "training-log",
+              "phase",
+              "data-nerd"
+            ]
           },
           {
             "group": "Nutrition",
-            "pages": []
+            "pages": [
+              "daily-nutrition-goal"
+            ]
           },
           {
             "group": "Sleep",
-            "pages": []
-          }
+            "pages": [
+              "night-time-routine"
+            ]
+          },
+          "why-hyrox",
+          "wishlist",
+          "mindset"
         ]
       },
       {
